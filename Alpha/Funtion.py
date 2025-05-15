@@ -27,4 +27,6 @@ def startcounting():
 
 
 
-startcounting()
+a = startcounting
+
+print(a)
