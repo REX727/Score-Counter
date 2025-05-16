@@ -105,6 +105,12 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'r' || e.key === 'R') {
         reset();
     }
+    if (e.key === 'n' || e.key === 'N'){
+        score_minus_blue();
+    }
+    if (e.key === 'm' || e.key === 'M'){
+        score_minus_red();
+    }
 });
 
 function reset() {
