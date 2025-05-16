@@ -16,18 +16,24 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="scoreboard">
-        <h2 id="BLUE">00</h2>
-        <h2>:</h2>
-        <h2 id="RED">00</h2>
+    <div class="timer" id="timer">03:00</div>
+    <div class="main-center">
+        <div class="scoreboard">
+            <h2 id="BLUE">00</h2>
+            <h2>:</h2>
+            <h2 id="RED">00</h2>
+        </div>
     </div>
     <div class="buttons">
-        <button onclick="score_add_blue()">+</button>
-        <button onclick="score_minus_blue()">-</button>
-        <button onclick="score_reset()">RESET</button>
-        <button onclick="score_add_red()">+</button>
-        <button onclick="score_minus_red()">-</button>
-        
+        <div class="row">
+            <button class="btn-plus" onclick="score_add_blue()" title="藍隊加分 (B)">+</button>
+            <button class="btn-plus" onclick="score_add_red()" title="紅隊加分 (R)">+</button>
+        </div>
+        <div class="row">
+            <button class="btn-minus" onclick="score_minus_blue()">-</button>
+            <button class="btn-reset" onclick="reset()">RESET</button>
+            <button class="btn-minus" onclick="score_minus_red()">-</button>
+        </div>
     </div>
 </body>
 </html>
