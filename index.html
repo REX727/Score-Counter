@@ -1,11 +1,3 @@
-<!--
-    Score Counter
-    --------------------
-    REX KWONG (REX727)
-    2025-5-15
-    Version 1.0
-    --------------------
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +11,9 @@
     <div class="timer" id="timer">03:00</div>
     <div class="main-center">
         <div class="scoreboard">
-            <h2 id="BLUE">00</h2>
-            <h2>:</h2>
-            <h2 id="RED">00</h2>
+            <h2 id="BLUE" class="score blue-score">00</h2>
+            <h2 class="colon">:</h2>
+            <h2 id="RED" class="score red-score">00</h2>
         </div>
     </div>
     <div class="buttons">
@@ -35,5 +27,6 @@
             <button class="btn-minus" onclick="score_minus_red()">-</button>
         </div>
     </div>
+    <p class="version-info">0.6 Beta (Eor Drone Soccer)</p>
 </body>
 </html>
