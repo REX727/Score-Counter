@@ -1,5 +1,5 @@
-let blue_s = 00;
-let red_s = 00;
+let blue_s = 0o0;
+let red_s = 0o0;
 
 function score_add_red() {
     red_s += 1;
